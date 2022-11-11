@@ -12,7 +12,9 @@ public class Main {
 		Conta cc = new ContaCorrente(cliente);
 		Conta poupanca = new ContaPoupanca(cliente);
 
-			
+		int a = 0;
+				while (a == 0) {
+
 			System.out.println(" ==== Conta Bancária ====");
 			System.out.println("Opções:");
 			System.out.println("1 - Cadastrar nova conta.");
@@ -21,15 +23,13 @@ public class Main {
 			System.out.println("4 - Transferir");
 			System.out.println("5 - Sacar");
 			System.out.print("Escolha uma opção: ");
-			
+
 			int escolha = in.nextInt();
-				
-			
-			
+
 			switch (escolha) {
 				case 1:
 					System.out.print("Digite o nome: ");
-					String n = in.nextLine();
+					String n = in.next();
 					cliente.setNome(n);
 					break;
 
@@ -96,5 +96,6 @@ public class Main {
 
 			}
 		}
-	
+
 	}
+}
