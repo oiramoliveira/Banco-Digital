@@ -5,7 +5,6 @@ public class Cliente {
 
 	private String nome;
 
-	List clientes = new ArrayList<>();
 
 	public String getNome() {
 		return nome;
